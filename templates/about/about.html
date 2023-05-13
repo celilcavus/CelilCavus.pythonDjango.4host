@@ -1,0 +1,27 @@
+{%extends '_layout.html'%} 
+{%load static%}
+{% block content %}
+          <!-- about -->
+          <div class="about">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage text_align_center">
+                        <h2>{{about.Title}}</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-10 offset-md-1">
+                     <div class="about_img text_align_center">
+                        <figure><img src="{%static 'images/about.png'%}" alt="#"/></figure>
+                        <p>
+                         {{about.Image}}
+                          {{about.Description}}
+                        </p>
+                        <a class="read_more" href="Javascript:void(0)">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end about -->
+{% endblock %}
